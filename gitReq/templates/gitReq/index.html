@@ -4,16 +4,11 @@
 <h2>GitHub API</h2>
 
 {% block content %}
-<div class="col-md-6 col-auto">
-  <div class="card">
-    <div class="card-header">
-      Repo for {{  }}
-    </div>
-    <ul class="list-group list-group-flush">
       {% for i in data %}
-        <p>{{ i.name }} {{ i.description }} {{ i.html_url }}</p> 
+      <li class="list-group-item">
+        <p><strong>Repo:</strong> {{ i.name }}</p>
+        <p><strong>Description:</strong> {{ i.description }} </p>
+        <p><strong>URL:</strong> <a href="{{ i.html_url }}">{{ i.html_url }}</a></p>
+      </li>
       {% endfor %}
-    </ul>
-  </div>
-</div>
 {% endblock content %}
