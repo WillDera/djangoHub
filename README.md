@@ -1,2 +1,2 @@
-# djangoHub
- Find repos based on user
+# djangoGit
+ find repo details based on a given user.
