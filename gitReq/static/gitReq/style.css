@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  form {
+    display: inline-flex;
+    align-self: center;
+  }
+  
+  form > input {
+    width: 60%;
+  }
+  form > .btn {
+    border: none;
+    border-radius: 5px;
+    background: purple;
+    color: white;
+    margin: 0 3px;
+    font-weight: bold;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type: none;
+  }
+  
+  ul >li{
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background: #ccc3;
+    text-align: left;
+    padding: 0 0 0 10px;
+    margin: 5px;
+    flex
+  }

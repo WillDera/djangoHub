@@ -1,10 +1,12 @@
+{% extends "base.html" %}
 <h1>Welcome to your first hand made</h1>
 
-  <h2>GitHub API</h2>
-  <form method="get">
-    <input type="text" name="username">
-    <button type="submit">search on github</button>
-  </form>
-  {% if user %}
-    <p><strong>{{ user.name }}</strong> has <strong>{{ user.public_repos }}</strong> public repositories.</p>
-  {% endif %}
+<h2>GitHub API</h2>
+
+{% block content %} {% for i in data %}
+<li class="list-group-item">
+  <p><strong>Repo:</strong> {{ i.name }}</p>
+  <p><strong>Description:</strong> {{ i.description }}</p>
+  <p><strong>URL:</strong> <a href="{{ i.html_url }}">{{ i.html_url }}</a></p>
+</li>
+{% endfor %} {% endblock content %}
