@@ -3,12 +3,10 @@
 
 <h2>GitHub API</h2>
 
-{% block content %}
-      {% for i in data %}
-      <li class="list-group-item">
-        <p><strong>Repo:</strong> {{ i.name }}</p>
-        <p><strong>Description:</strong> {{ i.description }} </p>
-        <p><strong>URL:</strong> <a href="{{ i.html_url }}">{{ i.html_url }}</a></p>
-      </li>
-      {% endfor %}
-{% endblock content %}
+{% block content %} {% for i in data %}
+<li class="list-group-item">
+  <p><strong>Repo:</strong> {{ i.name }}</p>
+  <p><strong>Description:</strong> {{ i.description }}</p>
+  <p><strong>URL:</strong> <a href="{{ i.html_url }}">{{ i.html_url }}</a></p>
+</li>
+{% endfor %} {% endblock content %}
