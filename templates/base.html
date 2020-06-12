@@ -28,8 +28,10 @@
       />
       <input type="submit" value="Submit" />
     </form>
-    <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px;">
-      {% block content %} {% endblock content %}
-    </ul>
+    <div id="userRepos">
+      <ul class="list-group mx-auto mb-5">
+        {% block content %} {% endblock content %}
+      </ul>
+    </div>
   </body>
 </html>
