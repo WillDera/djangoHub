@@ -8,5 +8,7 @@
   <p><strong>Repo:</strong> {{ i.name }}</p>
   <p><strong>Description:</strong> {{ i.description }}</p>
   <p><strong>URL:</strong> <a href="{{ i.html_url }}">{{ i.html_url }}</a></p>
+  <p><strong>Last Updated:</strong> {{ i.updated_at }}</p>
+  <p><strong>Last Pushed:</strong> {{ i.pushed_at }}</p>
 </li>
 {% endfor %} {% endblock content %}
